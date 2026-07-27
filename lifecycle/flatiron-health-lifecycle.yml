@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+source: https://status.flatiron.com
+status_page: https://status.flatiron.com
+status_page_provider: statuspage
+monitored_components:
+- name: Flatiron Vessel (Production Web)
+  note: Clinical research EDC, formerly Protocol First EDC
+- name: Flatiron Vessel (Production API)
+  note: Production API surface for the Flatiron Vessel clinical research platform
+- name: Clinical Pipe (Production App)
+incident_history_since: '2020-10'
+versioning: null
+deprecation: null
+sla: null
+deprecated_operations: []
+notes: >-
+  Flatiron publishes a live Statuspage covering its clinical research solutions
+  (Flatiron Vessel EDC web + Production API, and Clinical Pipe). No public
+  versioning policy, deprecation policy, or SLA document was found on the public
+  surface. No OpenAPI/developer documentation is publicly available to derive
+  deprecated operations.

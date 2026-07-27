@@ -1,8 +1,14 @@
 aid: flatiron-health
 name: Flatiron Health
-description: 'Flatiron Health is a company surfaced as a portfolio company of first-round-capital, gv,
-  sv-angel and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Flatiron Health is a healthcare technology company focused on oncology,
+  combining real-world data from millions of cancer patients with software and AI
+  to support life sciences research and clinical care. Its platforms include
+  OncoEMR and OncoCloud for oncology practices, Flatiron Vessel (clinical research
+  EDC, formerly Protocol First) and Clinical Pipe for clinical trials, and
+  real-world evidence products for life sciences. Flatiron data has informed
+  thousands of peer-reviewed publications and regulatory submissions. The company
+  is part of Roche.
 url: https://raw.githubusercontent.com/api-evangelist/flatiron-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +18,30 @@ x-backed-by:
 - sv-angel
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://avatars.githubusercontent.com/u/1882640?s=200&v=4
 tags:
 - Company
 - Healthcare
+- Oncology
+- Real-World Data
+- Real-World Evidence
+- Clinical Trials
+- Life Sciences
+- Electronic Health Records
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -27,3 +51,24 @@ maintainers:
 common:
 - type: Website
   url: https://flatiron.com
+- type: Blog
+  url: https://resources.flatiron.com
+- type: Support
+  url: https://flatiron.com/contact
+- type: TermsOfService
+  url: https://flatironhealth.legal/terms
+- type: PrivacyPolicy
+  url: https://flatironhealth.legal/hubfs/legal/5526%20-%20Final%20-%20Website%20Privacy%20Notice.pdf
+- type: GitHubOrganization
+  url: https://github.com/flatironhealth
+- type: StatusPage
+  url: https://status.flatiron.com
+- type: Lifecycle
+  url: lifecycle/flatiron-health-lifecycle.yml
+- type: DomainSecurity
+  url: security/flatiron-health-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
