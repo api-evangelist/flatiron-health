@@ -1,0 +1,71 @@
+edges:
+- partner_name: ONC Certified Health IT ((g)(10) FHIR API)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://lantern.healthit.gov/api/daily/download
+  category: ONC certified health IT (FHIR API)
+  contract_reference:
+    register: ONC Lantern FHIR endpoint monitor (lantern.healthit.gov daily download, source CHPL)
+    standard: ONC Health IT Certification 170.315(g)(10)
+    spec_file: null
+    role: onc-g10-certified-developer
+    registered_name: Flatiron Health
+    register_id: Flatiron Health
+    matched_domain: flatiron.com
+    matched_by: domain
+    domain_source: wikidata P856
+    list_hosts:
+    - fhir.prod.flatiron.io
+    fhir_versions:
+    - 4.0.1
+    signal_note: 'participation only: Lantern lists developers publishing the service-base-URL list a (g)(10) certification
+      requires, but not the CHPL listing status, so no certified_products / lapsed are claimed; endpoint counts
+      are the developer''s customers, context only, never counted'
+    detected_by: sweep-medtech.py
+    detected: '2026-10-19'
+    identity: wikidata Q77084265 'Flatiron Health (United States)' P856 https://flatiron.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-medtech.py
+  first_seen: '2026-10-19'
+- partner_name: GA4GH (Global Alliance for Genomics and Health)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.ga4gh.org/community/organizational-members/
+  category: genomic data-sharing standards alliance membership
+  contract_reference:
+    register: GA4GH organisational members (ga4gh.org/community/organizational-members/)
+    standard: GA4GH standards (htsget, DRS, TES, WES, Beacon, Passports, refget, VRS, Phenopackets)
+    spec_file: null
+    role: ga4gh-organisational-member
+    registered_name: Flatiron Health
+    register_country: United States
+    register_member_type: Companies Information Technology
+    register_id: https://flatiron.com/
+    matched_domain: flatiron.com
+    matched_by: domain
+    signal_note: 'participation only: organisational membership of the Global Alliance for Genomics and Health (the
+      member list links each member''s website, the link is the identity); GA4GH runs no conformance certification,
+      listing is not conformance'
+    detected_by: sweep-ga4gh-genomics-standards.py
+    detected: '2026-10-22'
+  detected_by: sweep-ga4gh-genomics-standards.py
+  first_seen: '2026-10-22'
+generated: '2026-10-19'
+method: searched
+source:
+- https://lantern.healthit.gov/api/daily/download
+- https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices
+checked:
+- https://lantern.healthit.gov/api/daily/download
+- https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices
+- https://www.ga4gh.org/community/organizational-members/
+- https://www.ga4gh.org/our-products/
+- https://www.ga4gh.org/our-products/implementations/
